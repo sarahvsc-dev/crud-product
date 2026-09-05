@@ -1,2 +1,1 @@
-# crud-product
-Sistema de gerenciamento de produtos desenvolvido com C# e ASP.NET Core MVC.
+É um sistema web desenvolvido para realizar o cadastro e gerenciamento de produtos. A aplicação permite cadastrar, visualizar, editar e excluir produtos, utilizando C# com ASP.NET Core MVC e SQL Server para o armazenamento dos dados. O projeto foi desenvolvido como parte de um teste técnico para uma vaga de estágio em Desenvolvimento Web.
