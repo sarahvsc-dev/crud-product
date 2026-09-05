@@ -1,0 +1,89 @@
+﻿@model ProductSystem.Models.Product
+
+<div class="container-fluid px-3 px-md-4 mt-4">
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+            <div class="mb-4">
+                <h1 class="fw-bold">Cadastrar Produto</h1>
+                <p class="text-muted">
+                    Preencha os dados do produto abaixo.
+                </p>
+            </div>
+
+            <div class="card shadow-sm">
+
+                <div class="card-body p-3 p-md-4">
+
+                    <form asp-action="Create" method="post">
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">
+                                Descrição
+                            </label>
+
+                            <input asp-for="Description"
+                                   class="form-control"
+                                   placeholder="Digite a descrição do produto" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Quantity" class="form-label">
+                                Quantidade
+                            </label>
+
+                            <input asp-for="Quantity"
+                                   type="number"
+                                   class="form-control"
+                                   placeholder="Digite a quantidade" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Value" class="form-label">
+                                Valor
+                            </label>
+
+                            <input asp-for="Value"
+                                   type="number"
+                                   step="0.01"
+                                   class="form-control"
+                                   placeholder="0,00" />
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="RegisteredBy" class="form-label">
+                                Usuário que cadastrou
+                            </label>
+
+                            <input asp-for="RegisteredBy"
+                                   class="form-control"
+                                   placeholder="Digite o nome do usuário" />
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex">
+
+                            <button type="submit"
+                                    class="btn btn-primary">
+                                Cadastrar Produto
+                            </button>
+
+                            <a asp-action="Index"
+                               class="btn btn-secondary">
+                                Voltar
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
